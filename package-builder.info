@@ -18,7 +18,7 @@
         be created.</summary>
         <release-date>2005-01-07</release-date>
 	<maturity>0</maturity>
-        <vendor url="http://www.cognovis.de/">cognovis GmbH & Co. KG</vendor>
+        <vendor url="http://www.cognovis.de/">cognovis GmbH &amp; Co. KG</vendor>
         <description format="text/plain">Create packages with versioned data.</description>
         <provides url="package-builder" version="0.01d1"/>
         <requires url="acs-kernel" version="5.0d13"/>
