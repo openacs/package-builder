@@ -21,12 +21,12 @@ set pkg_data [array get pkg]
 set types [db_list types {}]
 
 # ns_rmdir $pkg(path)
-ns_mkdir $pkg(path)
-ns_mkdir "$pkg(path)/tcl"
-ns_mkdir "$pkg(path)/www"
-ns_mkdir "$pkg(path)/catalog"
-ns_mkdir "$pkg(path)/sql"
-ns_mkdir "$pkg(path)/sql/postgresql"
+file mkdir $pkg(path)
+file mkdir "$pkg(path)/tcl"
+file mkdir "$pkg(path)/www"
+file mkdir "$pkg(path)/catalog"
+file mkdir "$pkg(path)/sql"
+file mkdir "$pkg(path)/sql/postgresql"
 
 pb::create::info::create -pkg_data $pkg_data
 pb::create::db::create -pkg_data $pkg_data
