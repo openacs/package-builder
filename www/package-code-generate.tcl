@@ -20,7 +20,7 @@ set pkg_data [array get pkg]
 
 set types [db_list types {}]
 
-# ns_rmdir $pkg(path)
+# file delete $pkg(path)
 file mkdir $pkg(path)
 file mkdir "$pkg(path)/tcl"
 file mkdir "$pkg(path)/www"
